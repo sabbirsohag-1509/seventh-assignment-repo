@@ -2,13 +2,13 @@ import React from 'react';
 import { CiCalendar } from "react-icons/ci";
 import { GoDotFill } from "react-icons/go";
 
-const TicketCard = ({card}) => {
+const TicketCard = ({card, handleTicketCard }) => {
 
-    console.log(card)
+    // console.log(card)
 
     return (
         <div> 
-            <div className='w-[390px] h-[170px] p-5 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-md'> 
+            <div onClick={()=>handleTicketCard(card)} className=' h-[170px] p-5 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-md cursor-pointer'> 
                 <div className='flex justify-between'> 
                     <h1 className='text-lg'>{card.title}</h1>
                     <p className={`flex items-center text-lg pr-2 h-7 rounded-full   ${card.status==="Open"?"text-green-600 bg-green-200":"text-amber-400 bg-amber-200"}`}>

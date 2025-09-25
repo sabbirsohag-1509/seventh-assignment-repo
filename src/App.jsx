@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner'
 import Footer from './Components/Footer'
@@ -17,14 +17,24 @@ const fetchData = async () =>{
 
 function App() {
 
+  const [progressCount, setProgressCount] = useState(0);
+  const [progressTaskStatus, setProgressTaskStatus] = useState([]);
+
+  const handleTicketCard = (card) => {
+    setProgressCount(count => count + 1)
+    alert ('Selected')
+    setProgressTaskStatus(count => [...count, card])
+    
+  }
+
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner progressCount={progressCount}></Banner>
 
       <Suspense fallback={<p>Loading....</p>}> 
         
-        <TicketCards fetchPromise={fetchPromise}> </TicketCards>
+        <TicketCards progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} fetchPromise={fetchPromise}> </TicketCards>
       </Suspense>
 
 
