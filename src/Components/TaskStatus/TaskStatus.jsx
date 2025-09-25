@@ -2,7 +2,7 @@ import React from 'react';
 import Status from './Status';
 
 const TaskStatus = ({progressTaskStatus}) => {
-    
+    console.log(progressTaskStatus)
     return (
         <div >
             <div className="w-[300px] bg-gray-200 p-4 rounded-lg mt-10">
@@ -10,7 +10,7 @@ const TaskStatus = ({progressTaskStatus}) => {
                 <div> 
                     {
                       
-
+                        progressTaskStatus.map((card) => <Status card={card}></Status>)
                     }
                 </div>
             </div>

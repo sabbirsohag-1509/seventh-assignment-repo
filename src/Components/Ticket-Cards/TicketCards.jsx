@@ -5,7 +5,7 @@ import TaskStatus from '../TaskStatus/TaskStatus';
 const TicketCards = ({fetchPromise , handleTicketCard, progressTaskStatus}) => {
     const cards = use (fetchPromise);
 
-    // console.log(cards)
+    // console.log(progressTaskStatus)
 
     return (
        <div className='max-w-[1150px] mx-auto flex gap-5'> 

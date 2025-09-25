@@ -22,8 +22,8 @@ function App() {
 
   const handleTicketCard = (card) => {
     setProgressCount(count => count + 1)
-    alert ('Selected')
     setProgressTaskStatus(count => [...count, card])
+    alert ('In Progress!')
     
   }
 
