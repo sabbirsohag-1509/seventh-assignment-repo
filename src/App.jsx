@@ -33,7 +33,7 @@ function App() {
 
 
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   )
 }
