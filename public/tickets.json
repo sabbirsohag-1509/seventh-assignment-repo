@@ -1,0 +1,102 @@
+[
+  {
+    "id": 4821,
+    "title": "Unable to login via Google",
+    "description": "Users report that Google login returns a 500 error during callback. Happens intermittently.",
+    "customer": "Acme Corp",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-20",
+    "reporter": "Olivia Bennett"
+  },
+  {
+    "id": 1076,
+    "title": "Dashboard cards overlap",
+    "description": "On devices 420px, dashboard cards overlap when charts render. Needs responsive fixes.",
+    "customer": "BrightWave",
+    "priority": "Medium Priority",
+    "status": "In_progress",
+    "createdAt": "2025-09-18",
+    "reporter": "Ethan Hunt"
+  },
+  {
+    "id": 3290,
+    "title": "Password reset email not delivered",
+    "description": "Some users do not receive password reset emails; SMTP logs show timeouts for certain domains.",
+    "customer": "GreenLeaf",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-12-27",
+    "reporter": "Salman Khan"
+  },
+  {
+    "id": 5643,
+    "title": "File upload fails for files",
+    "description": "Attachments larger than 5MB return 413 Payload Too Large from server. Need server config update.",
+    "customer": "PixelWorks",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-06-24",
+    "reporter": "Lionel Messi"
+  },
+  {
+    "id": 2184,
+    "title": "Add CSV export for filtered tickets",
+    "description": "Users request ability to export current filters as CSV with selectable columns.",
+    "customer": "DataSpring",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "2025-09-15",
+    "reporter": "Sabbir Hossain"
+  },
+  {
+    "id": 7915,
+    "title": "Performance: slow ticket list on high pages",
+    "description": "API response time > 2s when fetching page > 8. Suspect missing DB index in queries.",
+    "customer": "CoreNetworks",
+    "priority": "High Priority",
+    "status": "In_progress",
+    "createdAt": "2025-09-13",
+    "reporter": "Noah Mitchell"
+  },
+  {
+    "id": 4302,
+    "title": "Improve empty state with CTA",
+    "description": "Design an attractive empty state with illustration and a Create Ticket CTA for new users.",
+    "customer": "BlueScale",
+    "priority": "Medium Priority",
+    "status": "In_progress",
+    "createdAt": "2025-09-19",
+    "reporter": "Ava Morgan"
+  },
+  {
+    "id": 2559,
+    "title": "Document API v2 migration notes",
+    "description": "Write changelog entry and migration guidance for customers upgrading to API v2.",
+    "customer": "IntegrateX",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "2025-09-12",
+    "reporter": "Benjamin Hart"
+  },
+  {
+    "id": 6867,
+    "title": "Audit login attempts and lockout policy",
+    "description": "Implement account lockout after 5 failed attempts and store audit logs for security review.",
+    "customer": "SecureLane",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-14",
+    "reporter": "Isabella Reed"
+  },
+  {
+    "id": 9034,
+    "title": "UI: Add priority color labels",
+    "description": "Show colored priority badges in ticket list and detail view to improve scanning.",
+    "customer": "NimbusSoft",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "2025-09-10",
+    "reporter": "Mason Hayes"
+  }
+]
