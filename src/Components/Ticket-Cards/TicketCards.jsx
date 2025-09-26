@@ -1,15 +1,16 @@
-import React, { use } from 'react';
+
 import TicketCard from './TicketCard';
 import TaskStatus from '../TaskStatus/TaskStatus';
 
-const TicketCards = ({ fetchPromise, handleTicketCard,
+const TicketCards = ({  handleTicketCard,
          progressTaskStatus,
           handleCompleteBtn,
-           resolveStatus, tickets }) => {
+           resolveStatus,cards }) => {
 
         // console.log("Clicked ticket",tickets)
 
-  const cards = use(fetchPromise);
+
+
   
 
   return (
