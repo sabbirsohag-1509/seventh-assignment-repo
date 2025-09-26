@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import TicketCard from './TicketCard';
 import TaskStatus from '../TaskStatus/TaskStatus';
 
-const TicketCards = ({ fetchPromise, handleTicketCard, progressTaskStatus }) => {
+const TicketCards = ({ fetchPromise, handleTicketCard, progressTaskStatus,handleCompleteBtn, resolveStatus }) => {
   const cards = use(fetchPromise);
 
   return (
@@ -10,7 +10,7 @@ const TicketCards = ({ fetchPromise, handleTicketCard, progressTaskStatus }) => 
       
      
       <div className="order-1 lg:order-2 w-full lg:w-[280px]">
-        <TaskStatus progressTaskStatus={progressTaskStatus}></TaskStatus>
+        <TaskStatus resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus}></TaskStatus>
       </div>
 
       <div className="order-2 lg:order-1 flex-1">

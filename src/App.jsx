@@ -20,6 +20,8 @@ function App() {
 
   const [progressCount, setProgressCount] = useState(0);
   const [progressTaskStatus, setProgressTaskStatus] = useState([]);
+  const [resolvedCount, setResolvedCount] = useState(0);
+  const [resolveStatus, setResolvedStatus] = useState([]);
 
   const handleTicketCard = (card) => {
     setProgressCount(count => count + 1)
@@ -28,14 +30,24 @@ function App() {
     
   }
 
+  const handleCompleteBtn = (card) =>{
+
+    setProgressTaskStatus(prev => prev.filter(c => c.id !== card.id));
+
+    setResolvedCount (count => count +1)
+    setProgressCount(count => count -1)
+    toast.success('Task Completed!');
+    setResolvedStatus(stat => [...stat, card])
+  }
+
   return (
     <>
       <Navbar></Navbar>
-      <Banner progressCount={progressCount}></Banner>
+      <Banner resolvedCount={resolvedCount} progressCount={progressCount}></Banner>
 
       <Suspense fallback={<p>Loading....</p>}> 
         
-        <TicketCards progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} fetchPromise={fetchPromise}> </TicketCards>
+        <TicketCards resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} fetchPromise={fetchPromise}> </TicketCards>
       </Suspense>
 
 
