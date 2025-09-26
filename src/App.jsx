@@ -1,6 +1,7 @@
 
 import { Suspense, useState } from 'react'
 import './App.css'
+import { toast, ToastContainer } from 'react-toastify';
 import Banner from './Components/Banner'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
@@ -23,7 +24,7 @@ function App() {
   const handleTicketCard = (card) => {
     setProgressCount(count => count + 1)
     setProgressTaskStatus(count => [...count, card])
-    alert ('In Progress!')
+    toast.success('In-Progress!')
     
   }
 
@@ -44,6 +45,11 @@ function App() {
 
 
       <Footer></Footer>
+
+      <ToastContainer position='top-center'></ToastContainer>
+      
+
+
     </>
   )
 }
