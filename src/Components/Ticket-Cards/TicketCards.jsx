@@ -2,8 +2,15 @@ import React, { use } from 'react';
 import TicketCard from './TicketCard';
 import TaskStatus from '../TaskStatus/TaskStatus';
 
-const TicketCards = ({ fetchPromise, handleTicketCard, progressTaskStatus,handleCompleteBtn, resolveStatus }) => {
+const TicketCards = ({ fetchPromise, handleTicketCard,
+         progressTaskStatus,
+          handleCompleteBtn,
+           resolveStatus, tickets }) => {
+
+        // console.log("Clicked ticket",tickets)
+
   const cards = use(fetchPromise);
+  
 
   return (
     <div className="max-w-[1150px] mx-auto mt-10 flex flex-col lg:flex-row gap-8">

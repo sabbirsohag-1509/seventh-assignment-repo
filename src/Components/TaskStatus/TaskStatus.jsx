@@ -28,7 +28,7 @@ const TaskStatus = ({progressTaskStatus,handleCompleteBtn,resolveStatus}) => {
                 </div>
             </div>
 
-               {/* ********         RESOLVED-TASK-STATUS ******** */}
+               {/* ********         RESOLVED-TASK-STATUS     ******** */}
 
             <div> 
                 <div className="w-full bg-gray-200 p-4 rounded-lg mt-5"> 

@@ -15,6 +15,7 @@ const fetchData = async () =>{
 
 
   const fetchPromise = fetchData();
+  console.log("all data",fetchPromise)
 
 function App() {
 
@@ -22,22 +23,28 @@ function App() {
   const [progressTaskStatus, setProgressTaskStatus] = useState([]);
   const [resolvedCount, setResolvedCount] = useState(0);
   const [resolveStatus, setResolvedStatus] = useState([]);
+  const [tickets, setTickets] = useState([])
+  // const [cards, setCards] = useState([])
+
 
   const handleTicketCard = (card) => {
-    setProgressCount(count => count + 1)
-    setProgressTaskStatus(count => [...count, card])
-    toast.success('In-Progress!')
+    setProgressCount(count => count + 1);
+    setProgressTaskStatus(count => [...count, card]);
+    setTickets(remove => remove.filter(c => c.id !== card.id));
+    toast.success('In-Progress!');
     
   }
 
   const handleCompleteBtn = (card) =>{
-
+    // console.log(card)
+    // const filterCard = cards.filter()
     setProgressTaskStatus(prev => prev.filter(c => c.id !== card.id));
 
     setResolvedCount (count => count +1)
     setProgressCount(count => count -1)
     toast.success('Task Completed!');
     setResolvedStatus(stat => [...stat, card])
+    
   }
 
   return (
@@ -47,7 +54,7 @@ function App() {
 
       <Suspense fallback={<p>Loading....</p>}> 
         
-        <TicketCards resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} fetchPromise={fetchPromise}> </TicketCards>
+        <TicketCards tickets={tickets} resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} fetchPromise={fetchPromise}> </TicketCards>
       </Suspense>
 
 

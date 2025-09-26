@@ -21,17 +21,17 @@ const Footer = () => {
                 </div>
 
                 <div> 
-                    <h1 className="font-bold text-lg mb-2 ">Services</h1>
-                    <p className='py-1'>Products & Services</p>
-                    <p className='py-1'>Customer Stories</p>
-                    <p className='py-1'>Download Apps</p>
+                    <h1 className="font-bold text-lg mb-2">Services</h1>
+                    <p className='py-1 text-sm'>Products & Services</p>
+                    <p className='py-1 text-sm'>Customer Stories</p>
+                    <p className='py-1 text-sm'>Download Apps</p>
                 </div>
 
                 <div> 
                     <h1 className="font-bold text-lg mb-2">Information</h1>
-                    <p className='py-1'>Privacy Policy</p>
-                    <p className='py-1'>Terms & Condition</p>
-                    <p className='py-1'>Join Us</p>
+                    <p className='py-1 text-sm'>Privacy Policy</p>
+                    <p className='py-1 text-sm'>Terms & Condition</p>
+                    <p className='py-1 text-sm'>Join Us</p>
                 </div>
 
                 <div> 
