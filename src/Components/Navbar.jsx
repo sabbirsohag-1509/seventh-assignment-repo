@@ -3,12 +3,13 @@ import React from 'react';
 const Navbar = () => {
     return (
     <div>
-        <div className="navbar bg-base-100 shadow-sm px-4 lg:px-20">
+        <div className="navbar bg-base-100 shadow-sm px-4 lg:px-20 ">
         <div className="flex-1"> 
-        <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+        <a className="btn btn-ghost text-lg lg:text-xl">CS — Ticket System</a>
         </div>
+        
         <div className="flex-none hidden lg:flex ">
-            <ul className='menu menu-horizontal p-0 pr-5'>
+            <ul className='flex flex-col lg:flex-row gap-3 text-sm font-semibold menu menu-horizontal p-0 pr-5 '>
                 <li><a className='text-sm font-semibold text-gray-600'>Home</a></li>
                 <li><a className='text-sm font-semibold text-gray-600'>FAQ</a></li>
                 <li><a className='text-sm font-semibold text-gray-600'>Changelog</a></li>

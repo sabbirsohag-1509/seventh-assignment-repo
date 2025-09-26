@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
          <div className="bg-gray-900 text-white py-8 px-4 mt-8">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 
                 <div> 
                     <h1 className="font-bold text-lg mb-2 ">CS — Ticket System</h1>
@@ -36,15 +36,15 @@ const Footer = () => {
 
                 <div> 
                     <h1 className="font-bold text-lg mb-2">Social Links</h1>
-                    <div className='flex justify-center items-center gap-2 py-2'> 
+                    <div className='flex  items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/x.png" alt="" />
                         <p>@CS — Ticket System</p>
                     </div>
-                    <div className='flex justify-center items-center gap-2 py-2'> 
+                    <div className='flex items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/linkdin.png" alt="" />
                         <p>@CS — Ticket System</p>
                     </div>
-                    <div className='flex justify-center items-center gap-2 py-2'> 
+                    <div className='flex  items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/fb.png" alt="" />
                         <p>@CS — Ticket System</p>
                     </div>
