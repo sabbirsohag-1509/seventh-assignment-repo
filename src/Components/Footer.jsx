@@ -38,19 +38,19 @@ const Footer = () => {
                     <h1 className="font-bold text-lg mb-2">Social Links</h1>
                     <div className='flex  items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/x.png" alt="" />
-                        <p>@CS — Ticket System</p>
+                        <p className=' text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/linkdin.png" alt="" />
-                        <p>@CS — Ticket System</p>
+                        <p className=' text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex  items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/fb.png" alt="" />
-                        <p>@CS — Ticket System</p>
+                        <p className='text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex items-center gap-2 py-2'> 
                         <img className='w-4' src="/src/assets/email.png" alt="" />
-                        <p>support@cst.com</p>
+                        <p className=' text-sm'>support@cst.com</p>
                     </div>
 
                 </div>
