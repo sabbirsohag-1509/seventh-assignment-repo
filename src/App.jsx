@@ -28,7 +28,7 @@ function App() {
   const [cards, setCards] = useState([]);
 
     useEffect(()=>{ 
-      fetch('/public/tickets.json')
+      fetch('/tickets.json')
       .then(res => res.json())
       .then(data => setCards(data))
     } ,[])
@@ -57,7 +57,7 @@ function App() {
       <Suspense fallback={
          <div className="flex justify-center items-center h-40">
           <span className="loading loading-spinner loading-xl"></span>
-        </div>
+         </div>
         }> 
         
         <TicketCards cards={cards} resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} > </TicketCards>
