@@ -1,4 +1,8 @@
 import React from 'react';
+import xImg from '../assets/x.png'
+import fbImg from '../assets/fb.png'
+import linkdIn from '../assets/linkdin.png'
+import emailImg from '../assets/email.png'
 
 const Footer = () => {
     return (
@@ -36,20 +40,20 @@ const Footer = () => {
 
                 <div> 
                     <h1 className="font-bold text-lg mb-2">Social Links</h1>
-                    <div className='flex  items-center gap-2 py-2'> 
-                        <img className='w-4' src="/src/assets/x.png" alt="" />
+                    <div className='flex items-center gap-2 py-2'> 
+                        <img className='w-4' src={xImg} alt="" />
                         <p className=' text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex items-center gap-2 py-2'> 
-                        <img className='w-4' src="/src/assets/linkdin.png" alt="" />
+                        <img className='w-4' src={linkdIn} alt="" />
                         <p className=' text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex  items-center gap-2 py-2'> 
-                        <img className='w-4' src="/src/assets/fb.png" alt="" />
+                        <img className='w-4' src={fbImg} alt="" />
                         <p className='text-sm'>@CS — Ticket System</p>
                     </div>
                     <div className='flex items-center gap-2 py-2'> 
-                        <img className='w-4' src="/src/assets/email.png" alt="" />
+                        <img className='w-4' src={emailImg}alt="" />
                         <p className=' text-sm'>support@cst.com</p>
                     </div>
 
