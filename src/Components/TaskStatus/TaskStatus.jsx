@@ -44,7 +44,7 @@ const TaskStatus = ({progressTaskStatus,handleCompleteBtn,resolveStatus}) => {
 
                      <div> 
                         {
-                            resolveStatus.map((resolved) => <ResolvedTask resolved={resolved}></ResolvedTask>)
+                            resolveStatus.map((resolved) => <ResolvedTask key={resolved.id} resolved={resolved}></ResolvedTask>)
                         }
                      </div>
                 </div>

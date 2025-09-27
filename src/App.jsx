@@ -44,7 +44,7 @@ function App() {
     setProgressTaskStatus(prev => prev.filter(c => c.id !== card?.id));
     setResolvedCount (count => count +1)
     setProgressCount(count => count > 0 ? count -1 : 0)
-    toast.success('Task Completed!');
+    toast.success('Completed!');
     setResolvedStatus(stat => [...stat, card])
     setCards(cards.filter (car => car?.id !== card?.id))
   }
@@ -58,7 +58,7 @@ function App() {
          <div className="flex justify-center items-center h-40">
           <span className="loading loading-spinner loading-xl"></span>
         </div>
-      }> 
+        }> 
         
         <TicketCards cards={cards} resolveStatus={resolveStatus} handleCompleteBtn={handleCompleteBtn} progressTaskStatus={progressTaskStatus} handleTicketCard={handleTicketCard} > </TicketCards>
       </Suspense>

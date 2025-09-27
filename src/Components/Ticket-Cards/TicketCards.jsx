@@ -30,7 +30,7 @@ const TicketCards = ({  handleTicketCard,
             <TicketCard
               handleTicketCard={handleTicketCard}
               key={card.id}
-              card={card}
+              card={card} 
             />
           ))}
         </div>
